@@ -137,7 +137,7 @@ nav ul li a:hover {
 main{
     display: flex;
     flex-wrap: wrap;
-    max-width: 1300px;
+    max-width: 90%;
     margin: 0 auto;
 }
 
