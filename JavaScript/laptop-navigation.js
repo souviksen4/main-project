@@ -1,33 +1,14 @@
-// document.addEventListener("DOMContentLoaded", function() {
-//     // Get reference to the container
-//     var container = document.querySelector(".container");
-
-//     // Add click event listener to the container using event delegation
-//     container.addEventListener("click", function(event) {
-//         // Get the clicked element
-//         var target = event.target;
-
-//         // Check if the clicked element is a buy now button
-//         if (target.classList.contains("buy-now")) {
-//             // Redirect the user to a different website
-//             window.location.href = "https://google.com";
-//         } else if (target.closest(".laptop-card")) {
-//             // Redirect the user to a different local HTML page
-//             window.location.href = "./INDIVIDUAL-LAPTOPS/laptop-1.html";
-//         }
-//     });
-// });
-
-
 document.addEventListener("DOMContentLoaded", function() {
     // Object map to store card-to-page associations
     var cardToPageMap = {
         "laptop-1": "./INDIVIDUAL-LAPTOPS/laptop-1.html",
+        "laptop-2": "./INDIVIDUAL-LAPTOPS/laptop-2.html",
     };
 
     // Object map to store buy now button target pages
     var buyNowPageMap = {
-        "laptop-1": "https://facebook.com"
+        "laptop-1": "https://facebook.com",
+        "laptop-2": "https://facebook.com"
     };
 
     // Get reference to the container
