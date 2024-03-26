@@ -4,13 +4,15 @@ document.addEventListener("DOMContentLoaded", function() {
         "laptop-1": "./INDIVIDUAL-LAPTOPS/laptop-1.html",
         "laptop-2": "./INDIVIDUAL-LAPTOPS/laptop-2.html",
         "laptop-3": "./INDIVIDUAL-LAPTOPS/laptop-3.html",
+        "laptop-4": "./INDIVIDUAL-LAPTOPS/laptop-4.html",
     };
 
     // Object map to store buy now button target pages
     var buyNowPageMap = {
         "laptop-1": "https://facebook.com",
         "laptop-2": "https://facebook.com",
-        "laptop-3": "https://facebook.com"
+        "laptop-3": "https://facebook.com",
+        "laptop-4": "https://facebook.com"
     };
 
     // Get reference to the container
