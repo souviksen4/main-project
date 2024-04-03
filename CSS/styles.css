@@ -121,6 +121,14 @@ footer {
     align-items: space-around; /* Center the content horizontally */
 }
 
+.top-btn{
+    padding: 8px 15px;
+    background-color: #555;
+    color: #fff;
+    border: none;
+    cursor: pointer; 
+}
+
 .footer-section {
     display: flex;
     justify-content: space-around;
