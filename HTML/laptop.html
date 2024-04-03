@@ -375,6 +375,7 @@
         
         <footer>
         <div class="footer-section">
+            <button class="top-btn">TOP</button>
             <div class="column">
                 <ul>
                     <li><h3 style="padding-bottom: 15px; border-bottom: 3px solid red;">Company</h3></li><br>
@@ -420,6 +421,18 @@
             </div>
         </div>
         </footer>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const topBtn = document.querySelector('.top-btn');
+                topBtn.addEventListener('click', function() {
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth' 
+                    });
+                });
+            });
+        </script>
 
         <script src="..\JavaScript\laptop-navigation.js"></script>
     
