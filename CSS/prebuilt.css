@@ -139,7 +139,7 @@ main {
     align-items: center;
 }
 
-.laptop-card {
+.prebuilt-card {
     width: 100%;
     margin-bottom: 30px;
 }
@@ -148,14 +148,14 @@ main {
     display: flex;
 }
 
-.laptop-image {
+.prebuilt-image {
     width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.laptop-image img {
+.prebuilt-image img {
     max-width: 100%;
     height: auto;
 }
