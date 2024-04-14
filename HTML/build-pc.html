@@ -28,7 +28,91 @@
     </div>
     </header>
     
-    <main>BUILD PC</main>
+    <div class="container">
+        <div class="col-1">
+            <div class="col-name">Component</div>
+            <div class="processor component" style="margin: 0;">
+                <button class="accordion">Select Processor</button>
+                <div class="panel">
+                    Processor List..
+                </div>
+            </div>
+    
+            <div class="motherboard component">
+                <button class="accordion">Select Motherboard</button>
+                <div class="panel">
+                    Motherboard List..
+                </div>
+            </div>
+    
+            <div class="ram component">
+                <button class="accordion">Select Memory (RAM)</button>
+                <div class="panel">
+                    Memory (RAM) List..
+                </div>
+            </div>
+    
+            <div class="ssd component">
+                <button class="accordion">Select Solid State Drive</button>
+                <div class="panel">
+                    Solid State Drive List..
+                </div>
+            </div>
+    
+            <div class="hdd component">
+                <button class="accordion">Select Hard Disk Drive</button>
+                <div class="panel">
+                    Hard Disk Drive List..
+                </div>
+            </div>
+    
+            <div class="gpu component">
+                <button class="accordion">Select Graphics Card</button>
+                <div class="panel">
+                    Graphics Card List..
+                </div>
+            </div>
+    
+            <div class="psu component">
+                <button class="accordion">Select Power Supply Unit</button>
+                <div class="panel">
+                    Power Supply Unit List..
+                </div>
+            </div>
+    
+            <div class="cabinet component">
+                <button class="accordion">Select Cabinet</button>
+                <div class="panel">
+                    Cabinet List..
+                </div>
+            </div>
+    
+            <div class="monitor component">
+                <button class="accordion">Select Monitor</button>
+                <div class="panel">
+                    Monitor List..
+                </div>
+            </div>
+    
+            <div class="keyboard component">
+                <button class="accordion">Select Keyboard</button>
+                <div class="panel">
+                    Keyboard List..
+                </div>
+            </div>
+    
+            <div class="mouse component" style="margin: 0;">
+                <button class="accordion">Select Mouse</button>
+                <div class="panel">
+                    Mouse List..
+                </div>
+            </div>
+        </div>
+        <div class="col-2">
+            <div class="col-name">Cart</div>
+            <div class="cart" style="display: flex; justify-content: center;">Cart details</div>
+        </div>
+    </div>
 
     <footer>
         <button class="top-btn" style="margin: 0 0 25px 0;">TOP</button>
@@ -79,19 +163,21 @@
                     <a href="#"><img src="../Assets/reddit.png" alt="Reddit" width="32px"></a>
                 </div>
             </div>
-        </footer>
+    </footer>
 
-        <script>
-            document.addEventListener('DOMContentLoaded', function() {
-                const topBtn = document.querySelector('.top-btn');
-                topBtn.addEventListener('click', function() {
-                    window.scrollTo({
-                        top: 0,
-                        behavior: 'smooth' 
-                    });
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const topBtn = document.querySelector('.top-btn');
+            topBtn.addEventListener('click', function() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth' 
                 });
             });
-        </script>
+        });
+    </script>
+
+    <script src="../JavaScript/build-function.js"></script>
 
 </body>
 </html>

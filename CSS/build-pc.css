@@ -3,6 +3,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    /* border: 1px solid purple; */
 }
 
 body, html {
@@ -163,4 +164,73 @@ footer {
         flex-direction: column; /* Change to column layout */
         align-items: center; /* Center the items in the column */
     }
+}
+
+.container{
+    max-width: 1200px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+}
+
+.col-1{
+    border-right: 1px solid #444;
+    border-left: 1px solid #444;
+    border-top: 1px solid #444;
+    border-bottom: 1px solid #444;
+    width: 70%;
+}
+.col-2{
+    border-right: 1px solid #444;
+    border-top: 1px solid #444;
+    border-bottom: 1px solid #444;
+    width: 30%;
+}
+
+.col-name{
+    padding: 18px;
+    text-align: center;
+}
+
+.component{
+    margin: 10px 0;
+}
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    margin: 0 20px;
+    width: 95%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: max-height 0.2s ease-out;
+}
+
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+}
+
+.accordion:after {
+    content: '+'; 
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: 'x';
 }
