@@ -80,46 +80,13 @@ nav ul li a:hover {
     color: #ffd700; /* Change to desired hover color */
 }
 
-/* Centered sections */
-main {
-    display: flex;
-    flex-direction: row; /* Display main as row */
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    margin-top: auto; /* Push main to the bottom */
-    height: calc(100% - 100px); /* Adjust based on navbar height */
-}
-
-.section-one{
-    padding-right: 5px;
-}
-.section-two{
-    padding-left: 5px;
-}
-
-.centered {
-    text-align: center;
-    margin-bottom: 20px;
-    flex: 1; /* Take up remaining space */
-}
-
-.centered div {
-    max-width: 600px; /* Adjust as needed */
-    margin: auto;
-}
-
-img {
-    max-width: 80%;
-    height: auto;
-}
+/* MAIN */
 
 /*Footer*/
 footer {
     background-color: black;
     color: #fff;
     /* padding: 0 20px 0 20px ; */
-    
     display: flex;
     flex-direction: column;
     align-items: space-around; /* Center the content horizontally */
