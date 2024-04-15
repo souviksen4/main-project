@@ -173,8 +173,11 @@ footer {
     flex-direction: column;
     justify-content: space-around;
     display: flex;
-    flex-direction: row;
     padding: 0 5px;
+}
+
+.component-section{
+    display: flex;
 }
 
 .col-1{
