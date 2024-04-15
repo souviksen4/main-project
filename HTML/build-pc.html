@@ -1,13 +1,10 @@
     <!DOCTYPE html>
     <html lang="en">
-        <head>
+    <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Custom PC Builder/Build-PC</title>
         <link rel="stylesheet" href="../CSS/build-pc.css">
-        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
-        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
-        <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
     </head>
 
     <body>
@@ -32,11 +29,8 @@
         </header>
         
         <div class="container">
-            
             <img src="../Assets/20_1712045090.jpg" alt=""> <br>
-
             <div class="component-section">
-
                 <div class="col-1">
                     <div class="col-name">Components</div>
 
@@ -60,7 +54,7 @@
                                             <td>Intel Core i3-10100 Processor</td>
                                             <td>BX8070110100</td>
                                             <td>₹7,780</td>
-                                            <td><button>Add to Cart</button></td>
+                                            <td><button class="add-to-cart" data-name="Intel Core i3-10100 Processor" data-price="7780">Add to Cart</button></td>
                                         </tr>
                                         <tr>
                                             <td><img src="https://drr622wuctn26.cloudfront.net/image/cache/catalog/processor/intel/bx8070110100f/bx8070110100f-image-1-180x180.jpg" alt="Dummy Image" /></td>
@@ -74,14 +68,14 @@
                                             <td>Intel Core i5-10400 Processor</td>
                                             <td>BX8070110400</td>
                                             <td>₹11,145</td>
-                                            <td><button>Add to Cart</button></td>
+                                            <td><button class="add-to-cart" data-name="Intel Core i5-10400 Processor" data-price="11145">Add to cart</button></td>
                                         </tr>
                                         <tr>
                                             <td><img src="https://drr622wuctn26.cloudfront.net/image/cache/catalog/processor/intel/bx8070811700k/bx8070811700k-image-1-180x180.jpg" alt="Dummy Image" /></td>
                                             <td>Intel Core i7-11700K Processor</td>
                                             <td>BX8070811700K</td>
                                             <td>₹25,450</td>
-                                            <td><button>Add to Cart</button></td>
+                                            <td><button class="add-to-cart" data-name="Intel Core i7-11700K Processor" data-price="25450">Add to cart</button></td>
                                         </tr>
                                         <tr>
                                             <td><img src="https://drr622wuctn26.cloudfront.net/image/cache/catalog/processor/intel/bx8071513900ks/bx8071513900ks-image-main-180x180.png" alt="Dummy Image" /></td>
@@ -95,35 +89,35 @@
                                             <td>Intel Core i9-14900KF Processor</td>
                                             <td>BX8071514900KF	</td>
                                             <td>₹51,290</td>
-                                            <td><button>Add to Cart</button></td>
+                                            <td><button class="add-to-cart" data-name="Intel Core i9-14900KF Processor" data-price="51290">Add to cart</button></td>
                                         </tr>
                                         <tr>
                                             <td><img src="https://drr622wuctn26.cloudfront.net/image/cache/catalog/processor/amd/100-100000447wof/new/100-100000447wof-image-main-180x180.jpg" alt="Dummy Image" /></td>
                                             <td>AMD Ryzen Threadripper Pro 5955WX Workstation Processor</td>
                                             <td>100-100000447WOF</td>
                                             <td>₹100,040</td>
-                                            <td><button>Add to Cart</button></td>
+                                            <td><button class="add-to-cart" data-name="AMD Ryzen Threadripper Pro 5955WX" data-price="100040">Add to cart</button></td>
                                         </tr>
                                         <tr>
                                             <td><img src="https://drr622wuctn26.cloudfront.net/image/cache/catalog/processor/amd/ryzen-3-3200g/3200g--(1)-180x180.jpg" alt="Dummy Image" /></td>
                                             <td>AMD Ryzen 3 3200G</td>
                                             <td>YD3200C5FHBOX</td>
                                             <td>₹6,380</td>
-                                            <td><button>Add to Cart</button></td>
+                                            <td><button class="add-to-cart" data-name="AMD Ryzen 3 3200g" data-price="6380">Add to cart</button></td>
                                         </tr>
                                         <tr>
                                             <td><img src="https://drr622wuctn26.cloudfront.net/image/cache/catalog/processor/amd/100-100000061wof/100-100000061wof-image-main-180x180.jpg" alt="Dummy Image" /></td>
                                             <td>AMD Ryzen 9 5900X Processor</td>
                                             <td>100-100000061WOF</td>
                                             <td>₹25,715</td>
-                                            <td><button>Add to Cart</button></td>
+                                            <td><button class="add-to-cart" data-name="AMD Ryzen 9 5900X Processor" data-price="25715">Add to cart</button></td>
                                         </tr>
                                         <tr>
                                             <td><img src="https://drr622wuctn26.cloudfront.net/image/cache/catalog/processor/amd/100-100000909wof/100-100000908wof-image-main-180x180.jpg" alt="Dummy Image" /></td>
                                             <td>AMD Ryzen 9 7900X3D Processor</td>
                                             <td>100-100000909W0F</td>
                                             <td>₹41,120</td>
-                                            <td><button>Add to Cart</button></td>
+                                            <td><button class="add-to-cart" data-name="AMD Ryzen 9 7900X3D Processor" data-price="41120">Add to cart</button></td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -287,9 +281,28 @@
                 
                 <div class="col-2" style="margin: 0 0 20px 20px">
                     <div class="col-name">Cart</div>
-                    <div class="cart" style="display: flex; justify-content: center; align-items: center; flex-direction: column; text-align: justify;">
-                        <h1>Cart Details</h1>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi quibusdam modi distinctio est provident? Odit veniam distinctio nostrum dolorum vel cumque optio nemo ab minima, consequuntur expedita modi quia? Aut enim, adipisci aliquid, quaerat exercitationem iure perferendis cupiditate fugiat tenetur distinctio inventore quae sequi eligendi dolore dolores beatae nulla excepturi ipsam alias deleniti. Fugiat, hic. Voluptatem modi quaerat vero dolore expedita beatae sint autem, ex magnam provident dicta voluptatum magni. Quos mollitia error, asperiores fuga vel, sapiente distinctio corporis aut nobis ipsam, voluptatem sed adipisci culpa tempore laborum minima? Porro ea, fugiat ipsum tenetur et deleniti facere atque ipsa incidunt.</p>
+                    <div class="cart" id="cart-section" style="display: flex; justify-content: center; align-items: center; flex-direction: column; text-align: justify;">
+                        <table id="cart-table" style="margin-top: 10px;"> 
+                            <thead>
+                                <tr>
+                                    <th>Item name</th>
+                                    <th>Price (₹)</th>
+                                    <th>Quantity</th>
+                                    <th>Total</th>
+                                </tr>
+                            </thead>
+                            <tbody id="cart-items"></tbody>
+                            <tfoot>
+                                <tr>
+                                    <td colspan="3">Total:</td>
+                                    <td id="cart-total">0</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                        <div class="buttons-of-cart">
+                            <button class="empty-cart">Empty Cart</button>
+                            <button class="checkout">Checkout</button>
+                        </div>
                     </div>
                     
                     <br>
@@ -316,11 +329,8 @@
                     
 
                 </div>
-
             </div>
-
             <img src="../Assets/21_1712045090.jpg" alt="">
-
         </div>
 
         <footer>
@@ -413,10 +423,11 @@
 
                 setInterval(nextSlide, slideInterval);
             });
-
+            
         </script>
 
         <script src="../JavaScript/build-function.js"></script>
+        <script src="../JavaScript/Cart.js"></script>
 
     </body>
     </html>
