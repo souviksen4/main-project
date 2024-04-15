@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Custom PC Builder/Build-PC</title>
     <link rel="stylesheet" href="../CSS/build-pc.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -30,14 +33,13 @@
     
     <div class="container">
         
-        <img src="../Assets/20_1712045090.jpg" alt="">
+        <img src="../Assets/20_1712045090.jpg" alt=""> <br>
 
         <div class="component-section">
 
             <div class="col-1">
             
-
-                <div class="col-name">Component</div>
+                <div class="col-name">Components</div>
                 <div class="processor component">
                     <button class="accordion">Select Processor</button>
                     <div class="panel">
@@ -240,7 +242,7 @@
                     </div>
                 </div>
         
-                <div class="mouse component" style="margin: 0;">
+                <div class="mouse component">
                     <button class="accordion">Select Mouse</button>
                     <div class="panel">
                         Mouse List..
@@ -248,18 +250,61 @@
                 </div>
             </div>
             
-            <div class="col-2">
+            <div class="col-2" style="margin: 0 0 20px 20px">
                 <div class="col-name">Cart</div>
-                <div class="cart" style="display: flex; justify-content: center;">Cart details</div>
+                <div class="cart" style="display: flex; justify-content: center; align-items: center; flex-direction: column; text-align: justify;">
+                    <h1>Cart Details</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi quibusdam modi distinctio est provident? Odit veniam distinctio nostrum dolorum vel cumque optio nemo ab minima, consequuntur expedita modi quia? Aut enim, adipisci aliquid, quaerat exercitationem iure perferendis cupiditate fugiat tenetur distinctio inventore quae sequi eligendi dolore dolores beatae nulla excepturi ipsam alias deleniti. Fugiat, hic. Voluptatem modi quaerat vero dolore expedita beatae sint autem, ex magnam provident dicta voluptatum magni. Quos mollitia error, asperiores fuga vel, sapiente distinctio corporis aut nobis ipsam, voluptatem sed adipisci culpa tempore laborum minima? Porro ea, fugiat ipsum tenetur et deleniti facere atque ipsa incidunt.</p>
+                </div>
+                
+                <br>
+
+                <div id="myCarousel-one" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                      <li data-target="#myCarousel" data-slide-to="1"></li>
+                    </ol>
+                
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                      <div class="item active">
+                        <img src="../Assets/add-banner-1.jpg" alt="" style="width:100%;">
+                      </div>
+                
+                      <div class="item">
+                        <img src="../Assets/add-banner-2.jpg" alt="" style="width:100%;">
+                      </div>
+                    </div>
+                </div>
+
+                <div id="myCarousel-two" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                      <li data-target="#myCarousel" data-slide-to="1"></li>
+                    </ol>
+                
+                    <div class="carousel-inner">
+                      <div class="item active">
+                        <img src="../Assets/add-banner-3.jpg" alt="" style="width:100%;">
+                      </div>
+                
+                      <div class="item">
+                        <img src="../Assets/add-banner-4.jpg" alt="" style="width:100%;">
+                      </div>
+                    </div>
+                </div>
+                
             </div>
 
         </div>
 
+        <img src="../Assets/21_1712045090.jpg" alt="">
 
     </div>
 
     <footer>
-        <button class="top-btn" style="margin: 0 0 25px 0;">TOP</button>
+        <button class="toop-btn" style="margin: 0 0 25px 0;">TOP</button>
             <div class="footer-section">
                 <div class="column">
                     <!--<h3>Company</h3>-->
@@ -311,7 +356,7 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            const topBtn = document.querySelector('.top-btn');
+            const topBtn = document.querySelector('.toop-btn');
             topBtn.addEventListener('click', function() {
                 window.scrollTo({
                     top: 0,
