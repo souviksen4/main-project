@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     emptyCartButton.addEventListener("click", function() {
         if (cartItemsContainer.children.length === 0) {
-            showAlert("Cart is already empty.");
+            showAlert("Cart is already empty!");
             return;
         }
         // Clear the cart visually
@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function() {
         localStorage.removeItem("cartItems");
     
         // Show alert message
-        showAlert("Cart cleared successfully.");
+        showAlert("Cart cleared successfully ✔");
     
         // Automatically remove alert after 3 seconds
         setTimeout(function() {
@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function() {
             showAlert("Download failed ✖ , Cart is empty.");
             return;
         }
-        showAlert("Download started ✔");
+        showAlert("Downloaded successfully ✔");
         downloadCartDataAsTextFile();
     });
 
