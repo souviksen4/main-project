@@ -179,7 +179,7 @@ document.addEventListener("DOMContentLoaded", function() {
         // Automatically remove alert after 3 seconds
         setTimeout(function() {
             alertDiv.remove();
-        }, 1500);
+        }, 1000);
     }
 });
 
