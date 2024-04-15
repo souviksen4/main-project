@@ -1,372 +1,386 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Custom PC Builder/Build-PC</title>
-    <link rel="stylesheet" href="../CSS/build-pc.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-</head>
+    <!DOCTYPE html>
+    <html lang="en">
+        <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Custom PC Builder/Build-PC</title>
+        <link rel="stylesheet" href="../CSS/build-pc.css">
+        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
+        <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+    </head>
 
-<body>
-    <header>
-    <div class="navbar">
-        <div class="logo">
-            <a href="index.html">Your Logo</a>
+    <body>
+        <header>
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html">Your Logo</a>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="Search..">
+                <button type="submit">Search</button>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="buildpc.html">Build PC</a></li>
+                    <li><a href="prebuilt.html">Pre-Built PC</a></li>
+                    <li><a href="laptop.html">Laptop</a></li>
+                </ul>
+            </nav>
         </div>
-        <div class="search">
-            <input type="text" placeholder="Search..">
-            <button type="submit">Search</button>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="buildpc.html">Build PC</a></li>
-                <li><a href="prebuilt.html">Pre-Built PC</a></li>
-                <li><a href="laptop.html">Laptop</a></li>
-            </ul>
-        </nav>
-    </div>
-    </header>
-    
-    <div class="container">
+        </header>
         
-        <img src="../Assets/20_1712045090.jpg" alt=""> <br>
-
-        <div class="component-section">
-
-            <div class="col-1">
+        <div class="container">
             
-                <div class="col-name">Components</div>
-                <div class="processor component">
-                    <button class="accordion">Select Processor</button>
-                    <div class="panel">
-                        <br>
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Image</th>
-                                    <th>Product Name</th>
-                                    <th>Model Name</th>
-                                    <th>Product Price</th>
-                                    <th>Add to Cart</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <!-- <td><img src="http://placehold.it/50x50" alt="Dummy Image" /></td> -->
-                                    <td><img src="https://drr622wuctn26.cloudfront.net/image/cache/catalog/processor/intel/i3-10100/i3-10100-image-01-180x180.jpg" alt="Dummy Image" /></td>
-                                    <td>Intel Core i3-10100 Processor</td>
-                                    <td>BX8070110100</td>
-                                    <td>₹7,780</td>
-                                    <td><button>Add to Cart</button></td>
-                                </tr>
-                                <!-- You can add more rows here with similar structure -->
-                            </tbody>
-                            
-                            <tbody>
-                                <tr>
-                                    <td><img src="https://drr622wuctn26.cloudfront.net/image/cache/catalog/processor/intel/bx8070110100f/bx8070110100f-image-1-180x180.jpg" alt="Dummy Image" /></td>
-                                    <td>Intel Core i3-10100F Processor</td>
-                                    <td>BX8070110100F</td>
-                                    <td>₹6,080</td>
-                                    <td><button>Add to Cart</button></td>
-                                </tr>
-                                <!-- You can add more rows here with similar structure -->
-                            </tbody>
-    
-                            <tbody>
-                                <tr>
-                                    <td><img src="https://drr622wuctn26.cloudfront.net/image/cache/catalog/processor/intel/bx8070110400/bx8070110400-image-main-180x180.jpg" alt="Dummy Image" /></td>
-                                    <td>Intel Core i5-10400 Processor</td>
-                                    <td>BX8070110400</td>
-                                    <td>₹11,145</td>
-                                    <td><button>Add to Cart</button></td>
-                                </tr>
-                                <!-- You can add more rows here with similar structure -->
-                            </tbody>
-    
-                            <tbody>
-                                <tr>
-                                    <td><img src="https://drr622wuctn26.cloudfront.net/image/cache/catalog/processor/intel/bx8070811700k/bx8070811700k-image-1-180x180.jpg" alt="Dummy Image" /></td>
-                                    <td>Intel Core i7-11700K Processor</td>
-                                    <td>BX8070811700K</td>
-                                    <td>₹25,450</td>
-                                    <td><button>Add to Cart</button></td>
-                                </tr>
-                                <!-- You can add more rows here with similar structure -->
-                            </tbody>
-    
-                            <tbody>
-                                <tr>
-                                    <td><img src="https://drr622wuctn26.cloudfront.net/image/cache/catalog/processor/intel/bx8071513900ks/bx8071513900ks-image-main-180x180.png" alt="Dummy Image" /></td>
-                                    <td>Intel Core i9-13900KF Processor</td>
-                                    <td>BX8071513900KF</td>
-                                    <td>₹50,840</td>
-                                    <td><button>Add to Cart</button></td>
-                                </tr>
-                                <!-- You can add more rows here with similar structure -->
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
+            <img src="../Assets/20_1712045090.jpg" alt=""> <br>
+
+            <div class="component-section">
+
+                <div class="col-1">
+                
+                    <div class="col-name">Components</div>
+                    <div class="processor component">
+                        <button class="accordion">Select Processor</button>
+                        <div class="panel">
+                            <br>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Image</th>
+                                        <th>Product Name</th>
+                                        <th>Model Name</th>
+                                        <th>Product Price</th>
+                                        <th>Add to Cart</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <!-- <td><img src="http://placehold.it/50x50" alt="Dummy Image" /></td> -->
+                                        <td><img src="https://drr622wuctn26.cloudfront.net/image/cache/catalog/processor/intel/i3-10100/i3-10100-image-01-180x180.jpg" alt="Dummy Image" /></td>
+                                        <td>Intel Core i3-10100 Processor</td>
+                                        <td>BX8070110100</td>
+                                        <td>₹7,780</td>
+                                        <td><button>Add to Cart</button></td>
+                                    </tr>
+                                    <!-- You can add more rows here with similar structure -->
+                                </tbody>
+                                
+                                <tbody>
+                                    <tr>
+                                        <td><img src="https://drr622wuctn26.cloudfront.net/image/cache/catalog/processor/intel/bx8070110100f/bx8070110100f-image-1-180x180.jpg" alt="Dummy Image" /></td>
+                                        <td>Intel Core i3-10100F Processor</td>
+                                        <td>BX8070110100F</td>
+                                        <td>₹6,080</td>
+                                        <td><button>Add to Cart</button></td>
+                                    </tr>
+                                    <!-- You can add more rows here with similar structure -->
+                                </tbody>
         
-                <div class="motherboard component">
-                    <button class="accordion">Select Motherboard</button>
-                    <div class="panel">
-                        <br>
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Image</th>
-                                    <th>Product Name</th>
-                                    <th>Model Name</th>
-                                    <th>Product Price</th>
-                                    <th>Add to Cart</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <!-- <td><img src="http://placehold.it/50x50" alt="Dummy Image" /></td> -->
-                                    <td><img src="https://drr622wuctn26.cloudfront.net/image/cache/catalog/motherboard/ant%20value/b450mad4-n/b450mad4-n-image-0main-180x180.jpg" alt="Dummy Image" /></td>
-                                    <td>Ant Value B450MAD4-N Motherboard</td>
-                                    <td>B450MAD4-N</td>
-                                    <td>₹4,635</td>
-                                    <td><button>Add to Cart</button></td>
-                                </tr>
-                                <!-- You can add more rows here with similar structure -->
-                            </tbody>
-                            
-                            <tbody>
-                                <tr>
-                                    <td><img src="https://drr622wuctn26.cloudfront.net/image/cache/catalog/motherboard/ant%20value/g41mad3/g41mad3-image-main-180x180.jpg" alt="Dummy Image" /></td>
-                                    <td>Ant Value G41MAD3 DDR3 Motherboard</td>
-                                    <td>G41MAD3</td>
-                                    <td>₹2,100</td>
-                                    <td><button>Add to Cart</button></td>
-                                </tr>
-                                <!-- You can add more rows here with similar structure -->
-                            </tbody>
-    
-                            <tbody>
-                                <tr>
-                                    <td><img src="https://drr622wuctn26.cloudfront.net/image/cache/catalog/motherboard/asrock/a620m-hdv-m.2-plus/a620m-hdv-m.2-plus-image_main0-180x180.jpg" alt="Dummy Image" /></td>
-                                    <td>ASRock A620M-HDV/M.2 Plus DDR5 Motherboard</td>
-                                    <td>A620M-HDV-M.2-PLUS</td>
-                                    <td>₹9,450</td>
-                                    <td><button>Add to Cart</button></td>
-                                </tr>
-                                <!-- You can add more rows here with similar structure -->
-                            </tbody>
-    
-                            <tbody>
-                                <tr>
-                                    <td><img src="https://drr622wuctn26.cloudfront.net/image/cache/catalog/motherboard/asrock/a520m-hdv/a520m-hdv-image-main-180x180.jpg" alt="Dummy Image" /></td>
-                                    <td>Asrock A520M-HDV Motherboard</td>
-                                    <td>A520M-HDV</td>
-                                    <td>₹4,900</td>
-                                    <td><button>Add to Cart</button></td>
-                                </tr>
-                                <!-- You can add more rows here with similar structure -->
-                            </tbody>
-    
-                            <tbody>
-                                <tr>
-                                    <td><img src="https://drr622wuctn26.cloudfront.net/image/cache/catalog/motherboard/asrock/90-mxbfd0-a0iayz/90-mxbfd0-a0iayz-image-main-180x180.jpg" alt="Dummy Image" /></td>
-                                    <td>Asrock B560 Steel Legend Motherboard</td>
-                                    <td>90-MXBFD0-A0IAYZ</td>
-                                    <td>₹12,300</td>
-                                    <td><button>Add to Cart</button></td>
-                                </tr>
-                                <!-- You can add more rows here with similar structure -->
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
+                                <tbody>
+                                    <tr>
+                                        <td><img src="https://drr622wuctn26.cloudfront.net/image/cache/catalog/processor/intel/bx8070110400/bx8070110400-image-main-180x180.jpg" alt="Dummy Image" /></td>
+                                        <td>Intel Core i5-10400 Processor</td>
+                                        <td>BX8070110400</td>
+                                        <td>₹11,145</td>
+                                        <td><button>Add to Cart</button></td>
+                                    </tr>
+                                    <!-- You can add more rows here with similar structure -->
+                                </tbody>
         
-                <div class="ram component">
-                    <button class="accordion">Select Memory (RAM)</button>
-                    <div class="panel">
-                        Memory (RAM) List..
-                    </div>
-                </div>
+                                <tbody>
+                                    <tr>
+                                        <td><img src="https://drr622wuctn26.cloudfront.net/image/cache/catalog/processor/intel/bx8070811700k/bx8070811700k-image-1-180x180.jpg" alt="Dummy Image" /></td>
+                                        <td>Intel Core i7-11700K Processor</td>
+                                        <td>BX8070811700K</td>
+                                        <td>₹25,450</td>
+                                        <td><button>Add to Cart</button></td>
+                                    </tr>
+                                    <!-- You can add more rows here with similar structure -->
+                                </tbody>
         
-                <div class="ssd component">
-                    <button class="accordion">Select Solid State Drive</button>
-                    <div class="panel">
-                        Solid State Drive List..
+                                <tbody>
+                                    <tr>
+                                        <td><img src="https://drr622wuctn26.cloudfront.net/image/cache/catalog/processor/intel/bx8071513900ks/bx8071513900ks-image-main-180x180.png" alt="Dummy Image" /></td>
+                                        <td>Intel Core i9-13900KF Processor</td>
+                                        <td>BX8071513900KF</td>
+                                        <td>₹50,840</td>
+                                        <td><button>Add to Cart</button></td>
+                                    </tr>
+                                    <!-- You can add more rows here with similar structure -->
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
-                </div>
-        
-                <div class="hdd component">
-                    <button class="accordion">Select Hard Disk Drive</button>
-                    <div class="panel">
-                        Hard Disk Drive List..
-                    </div>
-                </div>
-        
-                <div class="gpu component">
-                    <button class="accordion">Select Graphics Card</button>
-                    <div class="panel">
-                        Graphics Card List..
-                    </div>
-                </div>
-        
-                <div class="psu component">
-                    <button class="accordion">Select Power Supply Unit</button>
-                    <div class="panel">
-                        Power Supply Unit List..
-                    </div>
-                </div>
-        
-                <div class="cabinet component">
-                    <button class="accordion">Select Cabinet</button>
-                    <div class="panel">
-                        Cabinet List..
-                    </div>
-                </div>
-        
-                <div class="monitor component">
-                    <button class="accordion">Select Monitor</button>
-                    <div class="panel">
-                        Monitor List..
-                    </div>
-                </div>
-        
-                <div class="keyboard component">
-                    <button class="accordion">Select Keyboard</button>
-                    <div class="panel">
-                        Keyboard List..
-                    </div>
-                </div>
-        
-                <div class="mouse component">
-                    <button class="accordion">Select Mouse</button>
-                    <div class="panel">
-                        Mouse List..
-                    </div>
-                </div>
-            </div>
             
-            <div class="col-2" style="margin: 0 0 20px 20px">
-                <div class="col-name">Cart</div>
-                <div class="cart" style="display: flex; justify-content: center; align-items: center; flex-direction: column; text-align: justify;">
-                    <h1>Cart Details</h1>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi quibusdam modi distinctio est provident? Odit veniam distinctio nostrum dolorum vel cumque optio nemo ab minima, consequuntur expedita modi quia? Aut enim, adipisci aliquid, quaerat exercitationem iure perferendis cupiditate fugiat tenetur distinctio inventore quae sequi eligendi dolore dolores beatae nulla excepturi ipsam alias deleniti. Fugiat, hic. Voluptatem modi quaerat vero dolore expedita beatae sint autem, ex magnam provident dicta voluptatum magni. Quos mollitia error, asperiores fuga vel, sapiente distinctio corporis aut nobis ipsam, voluptatem sed adipisci culpa tempore laborum minima? Porro ea, fugiat ipsum tenetur et deleniti facere atque ipsa incidunt.</p>
-                </div>
-                
-                <br>
-
-                <div id="myCarousel-one" class="carousel slide" data-ride="carousel">
-                    <!-- Indicators -->
-                    <ol class="carousel-indicators">
-                      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                      <li data-target="#myCarousel" data-slide-to="1"></li>
-                    </ol>
-                
-                    <!-- Wrapper for slides -->
-                    <div class="carousel-inner">
-                      <div class="item active">
-                        <img src="../Assets/add-banner-1.jpg" alt="" style="width:100%;">
-                      </div>
-                
-                      <div class="item">
-                        <img src="../Assets/add-banner-2.jpg" alt="" style="width:100%;">
-                      </div>
+                    <div class="motherboard component">
+                        <button class="accordion">Select Motherboard</button>
+                        <div class="panel">
+                            <br>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Image</th>
+                                        <th>Product Name</th>
+                                        <th>Model Name</th>
+                                        <th>Product Price</th>
+                                        <th>Add to Cart</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <!-- <td><img src="http://placehold.it/50x50" alt="Dummy Image" /></td> -->
+                                        <td><img src="https://drr622wuctn26.cloudfront.net/image/cache/catalog/motherboard/ant%20value/b450mad4-n/b450mad4-n-image-0main-180x180.jpg" alt="Dummy Image" /></td>
+                                        <td>Ant Value B450MAD4-N Motherboard</td>
+                                        <td>B450MAD4-N</td>
+                                        <td>₹4,635</td>
+                                        <td><button>Add to Cart</button></td>
+                                    </tr>
+                                    <!-- You can add more rows here with similar structure -->
+                                </tbody>
+                                
+                                <tbody>
+                                    <tr>
+                                        <td><img src="https://drr622wuctn26.cloudfront.net/image/cache/catalog/motherboard/ant%20value/g41mad3/g41mad3-image-main-180x180.jpg" alt="Dummy Image" /></td>
+                                        <td>Ant Value G41MAD3 DDR3 Motherboard</td>
+                                        <td>G41MAD3</td>
+                                        <td>₹2,100</td>
+                                        <td><button>Add to Cart</button></td>
+                                    </tr>
+                                    <!-- You can add more rows here with similar structure -->
+                                </tbody>
+        
+                                <tbody>
+                                    <tr>
+                                        <td><img src="https://drr622wuctn26.cloudfront.net/image/cache/catalog/motherboard/asrock/a620m-hdv-m.2-plus/a620m-hdv-m.2-plus-image_main0-180x180.jpg" alt="Dummy Image" /></td>
+                                        <td>ASRock A620M-HDV/M.2 Plus DDR5 Motherboard</td>
+                                        <td>A620M-HDV-M.2-PLUS</td>
+                                        <td>₹9,450</td>
+                                        <td><button>Add to Cart</button></td>
+                                    </tr>
+                                    <!-- You can add more rows here with similar structure -->
+                                </tbody>
+        
+                                <tbody>
+                                    <tr>
+                                        <td><img src="https://drr622wuctn26.cloudfront.net/image/cache/catalog/motherboard/asrock/a520m-hdv/a520m-hdv-image-main-180x180.jpg" alt="Dummy Image" /></td>
+                                        <td>Asrock A520M-HDV Motherboard</td>
+                                        <td>A520M-HDV</td>
+                                        <td>₹4,900</td>
+                                        <td><button>Add to Cart</button></td>
+                                    </tr>
+                                    <!-- You can add more rows here with similar structure -->
+                                </tbody>
+        
+                                <tbody>
+                                    <tr>
+                                        <td><img src="https://drr622wuctn26.cloudfront.net/image/cache/catalog/motherboard/asrock/90-mxbfd0-a0iayz/90-mxbfd0-a0iayz-image-main-180x180.jpg" alt="Dummy Image" /></td>
+                                        <td>Asrock B560 Steel Legend Motherboard</td>
+                                        <td>90-MXBFD0-A0IAYZ</td>
+                                        <td>₹12,300</td>
+                                        <td><button>Add to Cart</button></td>
+                                    </tr>
+                                    <!-- You can add more rows here with similar structure -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+            
+                    <div class="ram component">
+                        <button class="accordion">Select Memory (RAM)</button>
+                        <div class="panel">
+                            Memory (RAM) List..
+                        </div>
+                    </div>
+            
+                    <div class="ssd component">
+                        <button class="accordion">Select Solid State Drive</button>
+                        <div class="panel">
+                            Solid State Drive List..
+                        </div>
+                    </div>
+            
+                    <div class="hdd component">
+                        <button class="accordion">Select Hard Disk Drive</button>
+                        <div class="panel">
+                            Hard Disk Drive List..
+                        </div>
+                    </div>
+            
+                    <div class="gpu component">
+                        <button class="accordion">Select Graphics Card</button>
+                        <div class="panel">
+                            Graphics Card List..
+                        </div>
+                    </div>
+            
+                    <div class="psu component">
+                        <button class="accordion">Select Power Supply Unit</button>
+                        <div class="panel">
+                            Power Supply Unit List..
+                        </div>
+                    </div>
+            
+                    <div class="cabinet component">
+                        <button class="accordion">Select Cabinet</button>
+                        <div class="panel">
+                            Cabinet List..
+                        </div>
+                    </div>
+            
+                    <div class="monitor component">
+                        <button class="accordion">Select Monitor</button>
+                        <div class="panel">
+                            Monitor List..
+                        </div>
+                    </div>
+            
+                    <div class="keyboard component">
+                        <button class="accordion">Select Keyboard</button>
+                        <div class="panel">
+                            Keyboard List..
+                        </div>
+                    </div>
+            
+                    <div class="mouse component">
+                        <button class="accordion">Select Mouse</button>
+                        <div class="panel">
+                            Mouse List..
+                        </div>
                     </div>
                 </div>
-
-                <div id="myCarousel-two" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                      <li data-target="#myCarousel" data-slide-to="1"></li>
-                    </ol>
-                
-                    <div class="carousel-inner">
-                      <div class="item active">
-                        <img src="../Assets/add-banner-3.jpg" alt="" style="width:100%;">
-                      </div>
-                
-                      <div class="item">
-                        <img src="../Assets/add-banner-4.jpg" alt="" style="width:100%;">
-                      </div>
+                <div class="col-2" style="margin: 0 0 20px 20px">
+                    <div class="col-name">Cart</div>
+                    <div class="cart" style="display: flex; justify-content: center; align-items: center; flex-direction: column; text-align: justify;">
+                        <h1>Cart Details</h1>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi quibusdam modi distinctio est provident? Odit veniam distinctio nostrum dolorum vel cumque optio nemo ab minima, consequuntur expedita modi quia? Aut enim, adipisci aliquid, quaerat exercitationem iure perferendis cupiditate fugiat tenetur distinctio inventore quae sequi eligendi dolore dolores beatae nulla excepturi ipsam alias deleniti. Fugiat, hic. Voluptatem modi quaerat vero dolore expedita beatae sint autem, ex magnam provident dicta voluptatum magni. Quos mollitia error, asperiores fuga vel, sapiente distinctio corporis aut nobis ipsam, voluptatem sed adipisci culpa tempore laborum minima? Porro ea, fugiat ipsum tenetur et deleniti facere atque ipsa incidunt.</p>
                     </div>
+                    
+                    <br>
+                    
+                    <div class="carousel-container">
+                        <div class="carousel-slide">
+                        <img src="../Assets/add-banner-1.jpg" alt="Image 1">
+                        </div>
+                        <div class="carousel-slide">
+                        <img src="../Assets/add-banner-2.jpg" alt="Image 2">
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <div class="second-carousel-container">
+                        <div class="second-carousel-slide">
+                            <img src="../Assets/add-banner-3.jpg" alt="Second Carousel Image 1">
+                        </div>
+                        <div class="second-carousel-slide">
+                            <img src="../Assets/add-banner-4.jpg" alt="Second Carousel Image 2">
+                        </div>
+                    </div>
+                    
+
                 </div>
-                
+
             </div>
+
+            <img src="../Assets/21_1712045090.jpg" alt="">
 
         </div>
 
-        <img src="../Assets/21_1712045090.jpg" alt="">
+        <footer>
+            <button class="toop-btn" style="margin: 0 0 25px 0;">TOP</button>
+                <div class="footer-section">
+                    <div class="column">
+                        <!--<h3>Company</h3>-->
+                        <ul>
+                            <li><h3 style="padding-bottom: 15px; border-bottom: 3px solid red;">Company</h3></li><br>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Our Services</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Affiliate Program</a></li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <!--<h3>Get Help</h3>-->
+                        <ul>
+                            <li><h3 style="padding-bottom: 15px; border-bottom: 3px solid red;">Get Help</h3></li><br>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Returns</a></li>
+                            <li><a href="#">Order Status</a></li>
+                            <li><a href="#">Payment Options</a></li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <ul>
+                            <li><h3  style="padding-bottom: 15px; border-bottom: 3px solid red;">Links</h3></li><br>
+                            <li><a href="../HTML/index.html">Home</a></li>
+                            <li><a href="../HTML/build-pc.html">Build PC</a></li>
+                            <li><a href="../HTML/prebuilt.html">Pre-Built PC</a></li>
+                            <li><a href="../HTML/laptop.html">Laptops</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-section row-section">
+                    <div class="social-icons">
+                        <a href="#"><img src="../Assets/facebook.png" alt="Facebook" width="32px"></a>
+                        <a href="#"><img src="../Assets/twitter.png" alt="Twitter" width="32px"></a>
+                        <a href="#"><img src="../Assets/instagram.png" alt="Instagram" width="32px"></a>
+                        <a href="#"><img src="../Assets/linkedin.png" alt="LinkedIn" width="32px"></a>
+                    </div>
+                    <div class="center-text">
+                PC's Customs Pvt. Ltd © 2024. All Rights Reserved.
+                    </div>
+                    <div class="social-icons">
+                        <a href="#"><img src="../Assets/youtube.png" alt="YouTube" width="32px"></a>
+                        <a href="#"><img src="../Assets/pinterest.png" alt="Pinterest" width="32px"></a>
+                        <a href="#"><img src="../Assets/reddit.png" alt="Reddit" width="32px"></a>
+                    </div>
+                </div>
+        </footer>
 
-    </div>
-
-    <footer>
-        <button class="toop-btn" style="margin: 0 0 25px 0;">TOP</button>
-            <div class="footer-section">
-                <div class="column">
-                    <!--<h3>Company</h3>-->
-                    <ul>
-                        <li><h3 style="padding-bottom: 15px; border-bottom: 3px solid red;">Company</h3></li><br>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Our Services</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Affiliate Program</a></li>
-                    </ul>
-                </div>
-                <div class="column">
-                    <!--<h3>Get Help</h3>-->
-                    <ul>
-                        <li><h3 style="padding-bottom: 15px; border-bottom: 3px solid red;">Get Help</h3></li><br>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Returns</a></li>
-                        <li><a href="#">Order Status</a></li>
-                        <li><a href="#">Payment Options</a></li>
-                    </ul>
-                </div>
-                <div class="column">
-                    <ul>
-                        <li><h3  style="padding-bottom: 15px; border-bottom: 3px solid red;">Links</h3></li><br>
-                        <li><a href="../HTML/index.html">Home</a></li>
-                        <li><a href="../HTML/build-pc.html">Build PC</a></li>
-                        <li><a href="../HTML/prebuilt.html">Pre-Built PC</a></li>
-                        <li><a href="../HTML/laptop.html">Laptops</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-section row-section">
-                <div class="social-icons">
-                    <a href="#"><img src="../Assets/facebook.png" alt="Facebook" width="32px"></a>
-                    <a href="#"><img src="../Assets/twitter.png" alt="Twitter" width="32px"></a>
-                    <a href="#"><img src="../Assets/instagram.png" alt="Instagram" width="32px"></a>
-                    <a href="#"><img src="../Assets/linkedin.png" alt="LinkedIn" width="32px"></a>
-                </div>
-                <div class="center-text">
-            PC's Customs Pvt. Ltd © 2024. All Rights Reserved.
-                </div>
-                <div class="social-icons">
-                    <a href="#"><img src="../Assets/youtube.png" alt="YouTube" width="32px"></a>
-                    <a href="#"><img src="../Assets/pinterest.png" alt="Pinterest" width="32px"></a>
-                    <a href="#"><img src="../Assets/reddit.png" alt="Reddit" width="32px"></a>
-                </div>
-            </div>
-    </footer>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const topBtn = document.querySelector('.toop-btn');
-            topBtn.addEventListener('click', function() {
-                window.scrollTo({
-                    top: 0,
-                    behavior: 'smooth' 
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const topBtn = document.querySelector('.toop-btn');
+                topBtn.addEventListener('click', function() {
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth' 
+                    });
                 });
             });
-        });
-    </script>
 
-    <script src="../JavaScript/build-function.js"></script>
 
-</body>
-</html>
+            document.addEventListener("DOMContentLoaded", function() {
+                let slides = document.querySelectorAll(".carousel-slide");
+                let currentSlide = 0;
+                const slideInterval = 4000; 
+
+                function nextSlide() {
+                    slides[currentSlide].classList.remove("active");
+                    currentSlide = (currentSlide + 1) % slides.length;
+                    slides[currentSlide].classList.add("active");
+                }
+
+                setInterval(nextSlide, slideInterval);
+            });
+
+            document.addEventListener("DOMContentLoaded", function() {
+                let slides = document.querySelectorAll(".second-carousel-slide");
+                let currentSlide = 0;
+                const slideInterval = 4000; 
+
+                function nextSlide() {
+                    slides[currentSlide].classList.remove("active");
+                    currentSlide = (currentSlide + 1) % slides.length;
+                    slides[currentSlide].classList.add("active");
+                }
+
+                setInterval(nextSlide, slideInterval);
+            });
+
+        </script>
+
+        <script src="../JavaScript/build-function.js"></script>
+
+    </body>
+    </html>

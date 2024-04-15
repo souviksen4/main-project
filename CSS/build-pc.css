@@ -218,7 +218,7 @@ button.toop-btn {
 }
 
 .panel {
-    padding: 0 18px;
+    /* padding: 0 18px;  */
     background-color: white;
     display: none;
     overflow: hidden;
@@ -231,8 +231,8 @@ button.toop-btn {
     margin-left: 5px;
 }
 
-#active:after {
-    content: 'x';
+.accordion.active:after {
+    content: '-';
 }
 
 
@@ -248,7 +248,7 @@ th, td{
 
 th, td {
     padding: 8px 4px;
-    text-align: center;
+    text-align: center !important;
 }
 
 td img {
@@ -263,8 +263,35 @@ td button {
     color: white;
     cursor: pointer;
     border-radius: 5px;
+    margin: 5px;
 }
 
 td button:hover {
     background-color: #45a049;
+}
+
+
+/* Carousel */
+/* Styles for both carousels */
+.carousel-container,
+.second-carousel-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-slide,
+.second-carousel-slide {
+    display: none;
+}
+
+.carousel-slide img,
+.second-carousel-slide img {
+    width: 100%;
+    height: fit-content;
+}
+
+.carousel-slide.active,
+.second-carousel-slide.active {
+    display: block;
 }
