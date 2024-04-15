@@ -342,6 +342,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
     checkoutButton.addEventListener("click", function() {
         // Download cart data as text file
+        if (cartItemsContainer.children.length === 0) {
+            showAlert("Download failed ✖ , Cart is empty.");
+            return;
+        }
+        showAlert("Download started ✔");
         downloadCartDataAsTextFile();
     });
 
