@@ -270,6 +270,8 @@ document.addEventListener("DOMContentLoaded", function() {
     const addToCartButtons = document.querySelectorAll(".add-to-cart");
     const cartItemsContainer = document.getElementById("cart-items");
     const cartTotalElement = document.getElementById("cart-total");
+    const checkoutButton = document.getElementById("checkout-button");
+    const emptyCartButton = document.querySelector(".empty-cart");
 
     // Load cart data from local storage if available
     const storedCartItems = localStorage.getItem("cartItems");
@@ -317,6 +319,32 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 
+    emptyCartButton.addEventListener("click", function() {
+        if (cartItemsContainer.children.length === 0) {
+            showAlert("Cart is already empty.");
+            return;
+        }
+        // Clear the cart
+        cartItemsContainer.innerHTML = "";
+        cartTotalElement.textContent = "0.00";
+    
+        // Show alert message
+        showAlert("Cart cleared successfully.");
+    
+        // Automatically remove alert after 3 seconds
+        setTimeout(function() {
+            const alertElement = document.querySelector(".alert");
+            if (alertElement) {
+                alertElement.remove();
+            }
+        }, 2000);
+    });
+
+    checkoutButton.addEventListener("click", function() {
+        // Download cart data as text file
+        downloadCartDataAsTextFile();
+    });
+
     // Function to update cart total
     function updateCartTotal() {
         let total = 0;
@@ -343,4 +371,43 @@ document.addEventListener("DOMContentLoaded", function() {
             alertDiv.remove();
         }, 1000);
     }
+
+    function downloadCartDataAsTextFile() {
+        const fileName = "Configuration.txt";
+        const cartRows = cartItemsContainer.querySelectorAll("tr");
+
+        let textContent = "";
+        textContent += "====================================================================================\n";
+        textContent += "                                 PC's Custom\n";
+        textContent += "====================================================================================\n\n";
+
+        textContent += "Item Name".padEnd(40) + "Price".padEnd(15) + "Quantity".padEnd(15) + "Total Price\n";
+        textContent += "------------------------------------------------------------------------------------\n";
+
+        cartRows.forEach(function(row) {
+            const itemName = row.cells[0].textContent;
+            const itemPrice = parseFloat(row.cells[1].textContent);
+            const quantity = parseInt(row.cells[2].textContent);
+            const totalPrice = parseFloat(row.cells[3].textContent);
+            textContent += `${itemName.padEnd(40)} $${itemPrice.toFixed(2).padEnd(15)} ${quantity.toString().padEnd(15)} $${totalPrice.toFixed(2)}\n`;
+        });
+
+        textContent += "\n====================================================================================\n";
+        textContent += `TOTAL: $${cartTotalElement.textContent.padStart(74)}\n`;
+        textContent += "====================================================================================";
+
+        const blob = new Blob([textContent], { type: "text/plain" });
+        const url = window.URL.createObjectURL(blob);
+
+        const a = document.createElement("a");
+        a.href = url;
+        a.download = fileName;
+        document.body.appendChild(a);
+        a.click();
+
+        // Cleanup
+        window.URL.revokeObjectURL(url);
+        document.body.removeChild(a);
+    }
 });
+
