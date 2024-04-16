@@ -118,11 +118,11 @@ document.addEventListener("DOMContentLoaded", function() {
         const cartRows = cartItemsContainer.querySelectorAll("tr");
 
         let textContent = "";
-        textContent += "                                 PC's Custom\n\n";
-        textContent += "+----------------------------------------------------------------------------------+\n";
+        textContent += "                                                            PC's Custom\n\n";
+        textContent += "+----------------------------------------------------------------------------------------------------------------------------------------------+\n";
 
         textContent += "Item Name".padEnd(40) + "Price".padEnd(15) + "Quantity".padEnd(15) + "Total Price\n";
-        textContent += "+----------------------------------------------------------------------------------+\n";
+        textContent += "+----------------------------------------------------------------------------------------------------------------------------------------------+\n";
 
         cartRows.forEach(function(row) {
             const itemName = row.cells[0].textContent;
@@ -132,10 +132,10 @@ document.addEventListener("DOMContentLoaded", function() {
             textContent += `${itemName.padEnd(40)} ₹${itemPrice.toFixed(2).padEnd(15)} ${quantity.toString().padEnd(15)} ₹${totalPrice.toFixed(2)}\n`;
         });
 
-        textContent += "\n+----------------------------------------------------------------------------------+\n";
+        textContent += "\n+----------------------------------------------------------------------------------------------------------------------------------------------+\n";
         textContent += `Total: ${cartTotalElement.textContent.padStart(74)}\n`;
-        textContent += "+----------------------------------------------------------------------------------+\n";
-        textContent += "                        Thank you for Shopping 🛒 with us!😃                       \n";
+        textContent += "+----------------------------------------------------------------------------------------------------------------------------------------------+\n";
+        textContent += "                                                     Thank you for Shopping 🛒 with us!😃                       \n";
 
         const blob = new Blob([textContent], { type: "text/plain" });
         const url = window.URL.createObjectURL(blob);
