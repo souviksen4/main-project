@@ -25,26 +25,26 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Object map to store buy now button target pages
     var buyNowPageMap = {
-        "laptop-1": "https://facebook.com",
-        "laptop-2": "https://facebook.com",
-        "laptop-3": "https://facebook.com",
-        "laptop-4": "https://facebook.com",
-        "laptop-5": "https://facebook.com",
-        "laptop-6": "https://facebook.com",
-        "laptop-7": "https://facebook.com",
-        "laptop-8": "https://facebook.com",
-        "laptop-9": "https://facebook.com",
-        "laptop-10": "https://facebook.com",
-        "laptop-11": "https://facebook.com",
-        "laptop-12": "https://facebook.com",
-        "laptop-13": "https://facebook.com",
-        "laptop-14": "https://facebook.com",
-        "laptop-15": "https://facebook.com",
-        "laptop-16": "https://facebook.com",
-        "laptop-17": "https://facebook.com",
-        "laptop-18": "https://facebook.com",
-        "laptop-19": "https://facebook.com",
-        "laptop-20": "https://facebook.com"
+        "laptop-1": "https://amzn.in/d/gsWvnlB",
+        "laptop-2": "https://amzn.in/d/4d61k8z",
+        "laptop-3": "https://amzn.in/d/62QKP7i",
+        "laptop-4": "https://amzn.in/d/9SrJZ6w",
+        "laptop-5": "https://amzn.in/d/dYLKRNw",
+        "laptop-6": "https://amzn.in/d/dnCrIt2",
+        "laptop-7": "https://amzn.in/d/1NOa1gw",
+        "laptop-8": "https://amzn.in/d/2UQSgjT",
+        "laptop-9": "https://amzn.in/d/cWfgHM0",
+        "laptop-10": "https://amzn.in/d/hQqzDfV",
+        "laptop-11": "https://amzn.in/d/7DbAVDS",
+        "laptop-12": "https://amzn.in/d/3PgPDlh",
+        "laptop-13": "https://amzn.in/d/iMgnIwj",
+        "laptop-14": "https://amzn.in/d/8Gzp5lz",
+        "laptop-15": "https://amzn.in/d/1cwaFum",
+        "laptop-16": "https://amzn.in/d/fC8ytvO",
+        "laptop-17": "https://amzn.in/d/dn1lTIO",
+        "laptop-18": "https://amzn.in/d/255Ibf8",
+        "laptop-19": "https://amzn.in/d/9DyNz4h",
+        "laptop-20": "https://amzn.in/d/2KxKsmJ"
     };
 
     // Get reference to the container
