@@ -153,7 +153,12 @@ footer {
     background-color: #555;
     color: #fff;
     border: none;
+    border-radius: 0;
     cursor: pointer; 
+}
+
+.toop-btn:hover{
+    background-color: #464646;
 }
 
 button.toop-btn {
@@ -202,8 +207,9 @@ button.toop-btn {
 }
 
 .accordion {
+    font-size: 16px;
+    color: black;
     background-color: #eee;
-    color: #444;
     cursor: pointer;
     padding: 18px;
     width: 100%;

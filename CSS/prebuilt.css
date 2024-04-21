@@ -131,12 +131,23 @@ main {
     max-width: 990px;
     margin: 0 auto; /* Center the main section */
     padding: 20px;
+    display: flex;
+    flex-direction: row;
 }
 
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 70%;
+}
+
+.advertisment-container{
+    width: 30%;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .prebuilt-card {
@@ -274,4 +285,28 @@ footer {
         flex-direction: column; /* Change to column layout */
         align-items: center; /* Center the items in the column */
     }
+}
+
+
+.carousel-container,
+.second-carousel-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-slide,
+.second-carousel-slide {
+    display: none;
+}
+
+.carousel-slide img,
+.second-carousel-slide img {
+    width: 100%;
+    height: fit-content;
+}
+
+.carousel-slide.active,
+.second-carousel-slide.active {
+    display: block;
 }
