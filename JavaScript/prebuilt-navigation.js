@@ -35,34 +35,24 @@ document.addEventListener("DOMContentLoaded", function() {
         "prebuilt-10": "https://amzn.in/d/cYCX6Z7"
     };
 
-    // Get reference to the container
     var container = document.querySelector(".container");
 
-    // Add click event listener to the container using event delegation
     container.addEventListener("click", function(event) {
-        // Get the clicked element
         var target = event.target;
 
-        // Check if the clicked element is a buy now button
         if (target.classList.contains("buy-now")) {
-            // Find the parent card
             var card = target.closest(".prebuilt-card");
             if (card) {
-                // Get the target page from the buy now page map based on the card's class
                 var targetPage = buyNowPageMap[card.classList[1]];
                 if (targetPage) {
-                    // Redirect the user to the specified target page for buy now button
                     window.location.href = targetPage;
                 }
             }
         } else {
-            // Check if the clicked element is a card
             var card = target.closest(".prebuilt-card");
             if (card) {
-                // Get the target page from the object map based on the card's class
                 var targetPage = cardToPageMap[card.classList[1]];
                 if (targetPage) {
-                    // Redirect the user to the specified target page for card click
                     window.location.href = targetPage;
                 }
             }
