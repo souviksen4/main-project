@@ -357,3 +357,37 @@ footer {
         align-items: center; /* Center the items in the column */
     }
 }
+
+.rating-section{
+    width: 90%;
+    margin: 0 auto;
+    padding: 30px 10px;
+    display: flex;
+    /* background-color: lightcoral; */
+    border-top: 1px solid grey;
+}
+
+.c-one, .c-two{
+    width: 50%;
+}
+
+
+.head-section{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.rowtwo{
+    margin: 10px 0;
+}
+
+.rowone, .rowtwo, .rowthree{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.c-twochild1, .c-twochild2, .c-twochild3{
+    display: inline-flex;
+    padding: 8px 5px;
+}
